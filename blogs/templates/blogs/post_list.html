@@ -26,5 +26,18 @@
 				It also means when we needed to push ourselves a little bit further<br>we stopped. we just ignored very important thing, maybe it's because of your loved one's or because of your personal life. <br>
 				But SOMETHING YOU MISSED.
 			</p>
+		
+			
+				{%for post in posts%}
+			<div>
+			 <p><h3> published date: {{post.published_date}}</p></h3>
+			 <p> <h1><a href="">{{post.title}}</a></p></h1>
+			 <p>{{post.text|linebreaksbr}}</p>
+			</div>
+			{%endfor%}
+		
+
+		</div>
+
 </body>
 </html>
